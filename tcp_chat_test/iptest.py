@@ -17,8 +17,7 @@ PORT = 9999
 inputmessage = '大家好啊，我是电棍'
 send_true = False
 def get_local_ipv4():
-    # 这里是您之前提供的获取 IPv4 地址的函数
-    # 请确保已经导入了 netifaces 模块，并定义了 get_local_ipv4 函数
+
     interfaces = netifaces.interfaces()
     ipv4_addresses = []
     for interface in interfaces:
@@ -30,7 +29,7 @@ def get_local_ipv4():
 # 调用函数获取本机每个网卡的 IPv4 地址
 ipv4_addresses = get_local_ipv4()
 
-# 构建下拉框选项列表
+# 构建下拉框
 dropdown_options = [address for address in ipv4_addresses]
 
 
